@@ -4,6 +4,7 @@ import React from 'react';
 import { StyleSheet, Text, View} from 'react-native';
 import Home from './Home';
 import Orders from './Orders';
+import OrderDetail from './OrderDetail';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,7 @@ return (
             >
             <Stack.Screen name ="Home" component={Home}></Stack.Screen>
             <Stack.Screen name ="Orders" component={Orders}></Stack.Screen>
+            <Stack.Screen name ="OrderDetail" component={OrderDetail}></Stack.Screen>
             </Stack.Navigator>
 
         </NavigationContainer>
